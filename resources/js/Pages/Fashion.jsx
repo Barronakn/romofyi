@@ -2,9 +2,13 @@ import FashionPage from '@/Components/FashionPage';
 import Footer from '@/Components/Footer';
 import Menu from '@/Components/Menu';
 import Navbar from '@/Components/Navbar';
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 
 const Fashion = () => {
+    const title = "Fashion";
+    useLayoutEffect(() => {
+        document.title = `${title}`;
+    }, [title]);
     return (
         <section>
             <Menu />

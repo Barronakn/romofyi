@@ -2,9 +2,13 @@ import Footer from '@/Components/Footer';
 import Menu from '@/Components/Menu';
 import Navbar from '@/Components/Navbar';
 import NewsPage from '@/Components/NewsPage';
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 
 const News = () => {
+    const title = "News";
+    useLayoutEffect(() => {
+        document.title = `${title}`;
+    }, [title]);
     return (
         <section>
             <Menu />

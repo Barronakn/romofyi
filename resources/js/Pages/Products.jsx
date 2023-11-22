@@ -2,9 +2,13 @@ import Footer from '@/Components/Footer';
 import Menu from '@/Components/Menu';
 import Navbar from '@/Components/Navbar';
 import ProductsPage from '@/Components/ProductsPage';
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 
 const Products = () => {
+    const title = "Products";
+    useLayoutEffect(() => {
+        document.title = `${title}`;
+    }, [title]);
     return (
         <section>
             <Menu />

@@ -2,9 +2,13 @@ import AboutPage from '@/Components/AboutPage';
 import Footer from '@/Components/Footer';
 import Menu from '@/Components/Menu';
 import Navbar from '@/Components/Navbar';
-import React from 'react';
+import React, { useLayoutEffect } from 'react';
 
 const About = () => {
+    const title = "About";
+    useLayoutEffect(() => {
+        document.title = `${title}`;
+    }, [title]);
     return (
         <section>
             <Menu />
