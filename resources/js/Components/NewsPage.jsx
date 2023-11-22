@@ -29,8 +29,8 @@ const NewsPage = () => {
             </div>
 
             <div className='flex new max-[900px]:flex-col max-[900px]:gap-12 items-center gap-8 my-8 justify-between'>
-                <div className='1/3'>
-                    <img loading='lazy' src={news_2} alt="news-1-img" />
+                <div className='w-1/3 '>
+                    <img className='pointer-events-none' loading='lazy' src={news_2} alt="news-1-img" />
                 </div>
                 <div className='w-2/3 max-[900px]:w-full flex flex-col gap-10 justify-between'>
                     <h2 className='text-2xl font-bold'>Specimen book. It has survived not only five</h2>
@@ -52,7 +52,7 @@ const NewsPage = () => {
 
             <div className='flex new max-[900px]:flex-col max-[900px]:gap-12 items-center gap-8 justify-between'>
                 <div className='1/3'>
-                    <img loading='lazy' src={news_3} alt="news-1-img" />
+                    <img className='pointer-events-none' loading='lazy' src={news_3} alt="news-1-img" />
                 </div>
                 <div className='w-2/3 max-[900px]:w-full flex flex-col gap-10 justify-between'>
                     <h2 className='text-2xl font-bold'>Specimen book. It has survived not only five</h2>

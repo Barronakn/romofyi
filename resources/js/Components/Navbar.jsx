@@ -41,7 +41,7 @@ const Navbar = () => {
             <div className='flex items-center justify-between px-10 bg-slate-200'>
                 <Logo />
                 <div className='cursor-pointer'>
-                    <img loading='lazy' className='menu_btn w-10 h-8' onClick={() => setVisible(!visible)} src={menu_btn} alt="menu_btn-img" />
+                    <img loading='lazy' className='menu_btn pointer-events-none w-10 h-8' onClick={() => setVisible(!visible)} src={menu_btn} alt="menu_btn-img" />
                 </div>
             </div>
 

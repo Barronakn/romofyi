@@ -18,15 +18,15 @@ const Infos = () => {
 
             <div className='bg-sky-900 px-32 py-10 flex gap-32 max-[1024px]:gap-10 max-[768px]:flex-wrap justify-center items-center max-[425px]:px-10'>
                 <div className='bg-white shadow-2xl w-80 h-40 flex flex-col rounded-xl justify-center items-center'>
-                    <img loading='lazy' src={icon_mony} alt="icon_mony" />
+                    <img className='pointer-events-none' loading='lazy' src={icon_mony} alt="icon_mony" />
                     <p>Money Back</p>
                 </div>
                 <div className='bg-white shadow-2xl w-80 h-40 flex flex-col rounded-xl justify-center items-center'>
-                    <img loading='lazy' src={icon_gift} alt="icon_gift" />
+                    <img className='pointer-events-none' loading='lazy' src={icon_gift} alt="icon_gift" />
                     <p>Special Gift</p>
                 </div>
                 <div className='bg-white shadow-2xl w-80 h-40 flex flex-col rounded-xl justify-center items-center'>
-                    <img loading='lazy' src={icon_car} alt="icon_car" />
+                    <img className='pointer-events-none' loading='lazy' src={icon_car} alt="icon_car" />
                     <p>Free Shipping</p>
                 </div>
             </div>
