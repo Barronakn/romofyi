@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+    @apply bg-white
+}
+
+body::-webkit-scrollbar-thumb {
+    border-radius: 25px;
+    @apply bg-sky-900
+}
+
+.content {
+    margin: 0 auto;
+    max-width: 1700px !important;
+}
+
+.header-banner {
+    background: url("../../public/assets/images/banner.jpg") center center no-repeat;
+    background-size: cover;
+}
+
+.product_bg {
+    background: url("../../public/assets/images/product_bg.jpg") center center no-repeat;
+    background-size: contain;
+}
