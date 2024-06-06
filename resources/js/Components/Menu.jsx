@@ -35,7 +35,7 @@ const Menu = () => {
     ]
 
     return (
-        <section className='nav max-[821px]:hidden'>
+        <section className='nav hidden md:block'>
             <div className='flex items-center justify-around py-6 bg-slate-200'>
                 <div className='max-[600px]:hidden flex items-center gap-5'>
                     <Link href='#'><img className='pointer-events-none' loading='lazy' src={mail} alt="email-icon" /></Link>
@@ -44,13 +44,13 @@ const Menu = () => {
 
                 <Logo />
 
-                <div className='max-[600px]:hidden flex items-center gap-5'>
+                <div className='hidden sm:flex items-center gap-5'>
                     <Link href='#'><img className='pointer-events-none' loading='lazy' src={shop} alt="shop-icon" /></Link>
                     <Link href='#'>Order Now</Link>
                 </div>
             </div>
 
-            <div className='nav-bar flex max-[1104px]:flex-wrap max-[1104px]:py-2  items-center justify-around bg-sky-900'>
+            <div className='nav-bar flex lg:flex-nowrap flex-wrap py-2 lg:py-0 items-center justify-around bg-sky-900 px-20'>
                 <nav>
                     <ul className='uppercase flex items-center justify-center gap-6 text-white'>
                         {

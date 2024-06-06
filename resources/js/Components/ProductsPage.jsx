@@ -96,12 +96,12 @@ const ProductsPage = () => {
     ]
 
     return (
-        <section className='px-32 product_bg max-[1024px]:px-20 max-[768px]:px-10 max-[425px]:px-4'>
-            <div className='grid grid-cols-5 max-[1024px]:grid-cols-4 max-[768px]:grid-cols-4 max-[600px]:grid-cols-2 max-[425px]:grid-cols-1 gap-10 my-10'>
+        <section className='lg:px-32 product_bg md:px-20 sm:px-10 px-4'>
+            <div className='grid lg:grid-cols-5 md:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10 my-10'>
                 {
                     products.map((product, index) => (
                         <div key={index}>
-                            <img loading='lazy' className='bg-gray-100 pointer-events-none max-[425px]:w-full py-14 px-5' src={product.image} alt={"product-" + index} />
+                            <img loading='lazy' className='bg-gray-100 pointer-events-none w-full py-14 px-5' src={product.image} alt={"product-" + index} />
                             <h4>{product.name}</h4>
                             <p>${product.price}</p>
                         </div>

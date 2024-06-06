@@ -11,40 +11,40 @@ import helbet from "../../../public/assets/images/helbet.png"
 const Header = () => {
     return (
         <header>
-            <section className='header-banner max-[1024px]:pt-20 flex max-[768px]:flex-col items-center justify-between'>
-                <div className='mx-32 max-[768px]:mx-14 flex flex-col gap-6'>
-                    <h1 className='text-7xl max-[768px]:text-5xl max-[425px]:text-3xl text-sky-950 font-serif'>Romofyi</h1>
-                    <h3 className='text-8xl max-[768px]:text-6xl max-[425px]:text-4xl text-yellow-400'>Trands 2019</h3>
+            <section className='header-banner pt-20 lg:pt-0 flex md:flex-row flex-col items-center justify-between'>
+                <div className='md:mx-32 mx-14 flex flex-col gap-6'>
+                    <h1 className='md:text-7xl sm:text-5xl text-3xl text-sky-950 font-serif'>Romofyi</h1>
+                    <h3 className='md:text-8xl sm:text-6xl text-4xl text-yellow-400'>Trands 2019</h3>
                     <p className='text-2xl'>A huge fashion collection for ever</p>
-                    <Link className='max-[425px]:px-7 max-[425px]:py-3 max-[425px]:w-40 bg-blue-700 w-52 uppercase px-14 py-4 rounded-3xl my-8 text-white hover:bg-yellow-400 hover:text-black' href='#'>Shop Now</Link>
+                    <Link className='px-7 py-3 w-40 bg-blue-700 sm:w-52 uppercase sm:px-14 sm:py-4 rounded-3xl my-8 text-white hover:bg-yellow-400 hover:text-black' href='#'>Shop Now</Link>
                 </div>
                 <div>
-                    <img loading='lazy' src={header} alt="header-icon" />
+                    <img className='pointer-events-none' loading='lazy' src={header} alt="header-icon" />
                 </div>
             </section>
-            <section className='flex max-[1024px]:flex-wrap justify-center items-center text-center'>
+            <section className='flex lg:flex-nowrap flex-wrap justify-center items-center text-center'>
                 <div className='p-12 w-60 h-60 flex items-center flex-col justify-center bg-yellow-500'>
-                    <img loading='lazy' src={shoes} alt="shoes-img" />
+                    <img className='pointer-events-none' loading='lazy' src={shoes} alt="shoes-img" />
                     <h3 className="text-white font-bold uppercase text-base">Shoes</h3>
                 </div>
                 <div className='p-12 w-60 h-60 flex items-center flex-col justify-center bg-sky-950'>
-                    <img loading='lazy' src={underwear} alt="underwear-img" />
+                    <img className='pointer-events-none' loading='lazy' src={underwear} alt="underwear-img" />
                     <h3 className="text-white font-bold uppercase text-base">Underwear</h3>
                 </div>
                 <div className='p-12 w-60 h-60 flex items-center flex-col justify-center bg-yellow-500'>
-                    <img loading='lazy' src={pent} alt="pent-img" />
+                    <img className='pointer-events-none' loading='lazy' src={pent} alt="pent-img" />
                     <h3 className="text-white font-bold uppercase text-base">Pante & Socks</h3>
                 </div>
                 <div className='p-12 w-60 h-60 flex items-center flex-col justify-center bg-sky-950'>
-                    <img loading='lazy' src={t_shart} alt="t_shart-img" />
+                    <img className='pointer-events-none' loading='lazy' src={t_shart} alt="t_shart-img" />
                     <h3 className="text-white font-bold uppercase text-base">T-shirt & tankstop</h3>
                 </div>
                 <div className='p-12 w-60 h-60 flex items-center flex-col justify-center bg-yellow-500'>
-                    <img loading='lazy' src={jakit} alt="jakit-img" />
+                    <img className='pointer-events-none' loading='lazy' src={jakit} alt="jakit-img" />
                     <h3 className="text-white font-bold uppercase text-base">Cardigans & jumpers</h3>
                 </div>
                 <div className='p-12 w-60 h-60 flex items-center flex-col justify-center bg-sky-950'>
-                    <img loading='lazy' src={helbet} alt="helbet-img" />
+                    <img className='pointer-events-none' loading='lazy' src={helbet} alt="helbet-img" />
                     <h3 className="text-white font-bold uppercase text-base">Top & hat</h3>
                 </div>
             </section>

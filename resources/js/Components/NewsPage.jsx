@@ -5,12 +5,12 @@ import news_3 from "../../../public/assets/images/news_img3.jpg"
 
 const NewsPage = () => {
     return (
-        <section className='news mx-32 max-[900px]:mx-10 my-20'>
-            <div className='flex new max-[900px]:flex-col max-[900px]:gap-12 items-center gap-8 justify-between'>
-                <div>
+        <section className='news lg:mx-32 mx-10 my-20'>
+            <div className='new flex lg:flex-row flex-col gap-12 items-center lg:gap-8 justify-between'>
+                <div className='lg:w-1/3 w-full'>
                     <img className='pointer-events-none' loading='lazy' src={news_1} alt="news-1-img" />
                 </div>
-                <div className='w-2/3 max-[900px]:w-full flex flex-col gap-10 justify-between'>
+                <div className='lg:w-2/3 w-full flex flex-col gap-10 justify-between'>
                     <h2 className='text-2xl font-bold'>Specimen book. It has survived not only five</h2>
                     <div className='details flex items-center justify-between'>
                         <div>
@@ -28,11 +28,11 @@ const NewsPage = () => {
                 </div>
             </div>
 
-            <div className='flex new max-[900px]:flex-col max-[900px]:gap-12 items-center gap-8 my-8 justify-between'>
-                <div className='w-1/3 '>
-                    <img className='pointer-events-none' loading='lazy' src={news_2} alt="news-1-img" />
+            <div className='new flex lg:flex-row flex-col lg:gap-12 gap-8 my-10 justify-between'>
+                <div className='lg:w-1/3 w-[510px] max-w-full'>
+                    <img className='pointer-events-none w-full' loading='lazy' src={news_2} alt="news-1-img" />
                 </div>
-                <div className='w-2/3 max-[900px]:w-full flex flex-col gap-10 justify-between'>
+                <div className='lg:w-2/3 w-full flex flex-col gap-10 justify-between'>
                     <h2 className='text-2xl font-bold'>Specimen book. It has survived not only five</h2>
                     <div className='details flex items-center justify-between'>
                         <div>
@@ -50,11 +50,11 @@ const NewsPage = () => {
                 </div>
             </div>
 
-            <div className='flex new max-[900px]:flex-col max-[900px]:gap-12 items-center gap-8 justify-between'>
-                <div className='1/3'>
+            <div className='new flex lg:flex-row flex-col lg:gap-12 items-center gap-8 justify-between'>
+                <div className='lg:w-1/3 w-full'>
                     <img className='pointer-events-none' loading='lazy' src={news_3} alt="news-1-img" />
                 </div>
-                <div className='w-2/3 max-[900px]:w-full flex flex-col gap-10 justify-between'>
+                <div className='lg:w-2/3 w-full flex flex-col gap-10 justify-between'>
                     <h2 className='text-2xl font-bold'>Specimen book. It has survived not only five</h2>
                     <div className='details flex items-center justify-between'>
                         <div>

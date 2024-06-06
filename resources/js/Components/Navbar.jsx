@@ -37,15 +37,15 @@ const Navbar = () => {
 
     return (
 
-        <section className='navbar hidden max-[821px]:block'>
+        <section className='navbar md:hidden block'>
             <div className='flex items-center justify-between px-10 bg-slate-200'>
                 <Logo />
-                <div className='cursor-pointer'>
-                    <img loading='lazy' className='menu_btn pointer-events-none w-10 h-8' onClick={() => setVisible(!visible)} src={menu_btn} alt="menu_btn-img" />
+                <div onClick={() => setVisible(!visible)} className='cursor-pointer'>
+                    <img loading='lazy' className='menu_btn pointer-events-none w-10 h-8' src={menu_btn} alt="menu_btn-img" />
                 </div>
             </div>
 
-            <div className='relative max-[600px]:px-20 max-[600px]:w-full bg-sky-900 max-[425px]:px-0'>
+            <div className='relative px-5 max-[600px]:w-full bg-sky-900 sm:px-1'>
                 <nav className='absolute bg-sky-900 w-full top-0 left-0 mx-0 my-auto text-white'>
                     {visible &&
                         <ul className='uppercase flex flex-col justify-center p-5 gap-6'>
